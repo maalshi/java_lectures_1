@@ -2,6 +2,7 @@ public class Task4 {
     public static void main(String[] args) {
 
         int n = 10;
+        int result = 0;
 
         int[] array = new int[n];
 
@@ -10,10 +11,14 @@ public class Task4 {
         }
 
         for (int a=0;a<array.length/2;a++) {
-            int sum = array[a] + array[n - 1];
+            int sum = array[a] + array[n - a - 1];
             System.out.println(sum);
-            n--;
+
+            if (result <sum){
+                result = sum;
+            }
         }
+        System.out.println("Максимальная сумма: "+result);
 
     }
 }
