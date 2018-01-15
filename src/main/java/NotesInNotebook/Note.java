@@ -2,18 +2,24 @@ package NotesInNotebook;
 
 public class Note  {
 
-    private String Note;
-
+    private String note;
 
     public Note(String note) {
-        Note = note;
+        this.note = note;
     }
 
     public String getNote() {
-        return Note;
+        return note;
     }
 
     public void setNote(String note) {
-        Note = note;
+        note = note;
+    }
+
+    @Override
+    public String toString() {
+        return "Note{" +
+                "Note='" + note + '\'' +
+                '}';
     }
 }
