@@ -2,10 +2,18 @@ package NotesInNotebook;
 
 public class Note  {
 
-    static Note ADDED_NOTE;
+    private String Note;
 
-    static Note EDITED_NOTE;
 
-    static Note REMOVED_NOTE;
+    public Note(String note) {
+        Note = note;
+    }
 
+    public String getNote() {
+        return Note;
+    }
+
+    public void setNote(String note) {
+        Note = note;
+    }
 }
