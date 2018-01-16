@@ -2,8 +2,13 @@ package NotesInNotebook;
 
 public class Notebook {
 
+    private Note[] notes;
+
     public Notebook(int quantity) {
+
         this.quantity = quantity;
+        notes = new Note[quantity];
+
     }
 
     public int getQuantity() {
@@ -18,7 +23,7 @@ public class Notebook {
 
 
 
-    Note[] notes = new Note[quantity];
+
 
     public void addNote(Note note){
 

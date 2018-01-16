@@ -5,6 +5,7 @@ public class Runner {
     public static void main(String[] args){
         Notebook notebook = new Notebook(5);
 
+
         notebook.addNote(new Note("note"));
         notebook.addNote(new Note("note2"));
         notebook.removeNote(0);
