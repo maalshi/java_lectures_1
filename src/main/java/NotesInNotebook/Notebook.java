@@ -2,7 +2,21 @@ package NotesInNotebook;
 
 public class Notebook {
 
-    int quantity = 10;
+    public Notebook(int quantity) {
+        this.quantity = quantity;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+
+    private int quantity;
+
+
 
     Note[] notes = new Note[quantity];
 
@@ -44,13 +58,4 @@ public class Notebook {
         }
     }
 
-    public void sizeNote(){
-
-        int i =0;
-        while (i<quantity){
-
-            i++;
-        }
-        System.out.println(i);
-    }
 }
