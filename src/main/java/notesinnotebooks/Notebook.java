@@ -1,11 +1,11 @@
-package NotesInNotebook;
+package notesinnotebooks;
 
 public class Notebook {
 
     private Note[] notes;
 
-    public Notebook(int quantity) {
-        notes = new Note[quantity];
+    public Notebook(int arraySize) {
+        notes = new Note[arraySize];
     }
 
     public void addNote(Note note){
@@ -37,7 +37,7 @@ public class Notebook {
         }
     }
 
-    public void lookNote(){
+    public void printAllNotes(){
 
         int i =0;
         while (i<notes.length){

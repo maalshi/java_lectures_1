@@ -1,4 +1,4 @@
-package NotesInNotebook;
+package notesinnotebooks;
 
 public class Runner {
 
