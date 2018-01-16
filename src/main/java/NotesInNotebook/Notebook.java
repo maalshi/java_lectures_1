@@ -5,25 +5,8 @@ public class Notebook {
     private Note[] notes;
 
     public Notebook(int quantity) {
-
-        this.quantity = quantity;
         notes = new Note[quantity];
-
     }
-
-    public int getQuantity() {
-        return quantity;
-    }
-
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
-    }
-
-    private int quantity;
-
-
-
-
 
     public void addNote(Note note){
 
@@ -57,7 +40,7 @@ public class Notebook {
     public void lookNote(){
 
         int i =0;
-        while (i<quantity){
+        while (i<notes.length){
             System.out.println(notes[i]);
             i++;
         }
