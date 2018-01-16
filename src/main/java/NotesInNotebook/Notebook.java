@@ -2,7 +2,9 @@ package NotesInNotebook;
 
 public class Notebook {
 
-    Note[] notes = new Note[10];
+    int quantity = 10;
+
+    Note[] notes = new Note[quantity];
 
     public void addNote(Note note){
 
@@ -36,9 +38,19 @@ public class Notebook {
     public void lookNote(){
 
         int i =0;
-        while (i<10){
+        while (i<quantity){
             System.out.println(notes[i]);
             i++;
         }
+    }
+
+    public void sizeNote(){
+
+        int i =0;
+        while (i<quantity){
+
+            i++;
+        }
+        System.out.println(i);
     }
 }
