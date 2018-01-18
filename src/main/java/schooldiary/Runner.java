@@ -2,11 +2,15 @@ package schooldiary;
 
 public class Runner {
 
-    Diary diary = new Diary();
-    /*
-    diary.addDate();
-    diary.addLesson();
-    diary.addHometask();
-    diary.addMark();
-     */
+    public static void main(String[] args) {
+        Note note = new Note();
+        Diary diary = new Diary();
+        Day day = new Day();
+
+        note.addDate();
+        note.addLesson();
+        note.addHometask();
+        note.addMark();
+    }
+
 }
