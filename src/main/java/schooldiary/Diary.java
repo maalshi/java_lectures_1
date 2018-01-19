@@ -3,7 +3,7 @@ package schooldiary;
 public class Diary {
 
 
-    Day daysarray [] = new Day [5];
+    private Day daysarray [] = new Day [5];
 
     public void addDay(Day day){
         for (int i =0; i<5; i++){

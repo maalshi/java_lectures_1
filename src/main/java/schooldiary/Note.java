@@ -5,7 +5,15 @@ import schooldiary.enums.Mark;
 
 public class Note {
 
+    private Lesson lesson;
     private String hometask;
+    private Mark mark;
+
+    public Note(Lesson lesson, String hometask, Mark mark) {
+        this.lesson = lesson;
+        this.hometask = hometask;
+        this.mark = mark;
+    }
 
     public Lesson getLesson() {
         return lesson;
@@ -15,22 +23,11 @@ public class Note {
         this.lesson = lesson;
     }
 
-    private Lesson lesson;
-
     public Mark getMark() {
         return mark;
     }
 
     public void setMark(Mark mark) {
-        this.mark = mark;
-    }
-
-    private Mark mark;
-
-
-    public Note(Lesson lesson, String hometask, Mark mark) {
-        this.lesson = lesson;
-        this.hometask = hometask;
         this.mark = mark;
     }
 

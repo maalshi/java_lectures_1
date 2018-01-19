@@ -5,9 +5,9 @@ import schooldiary.enums.Mark;
 
 public class Day {
 
-    Note notesarray [] = new Note[10];
+    private Note notesarray [] = new Note[10];
 
-    public Day(Note note) {
+    public Day() {
 
     }
 
