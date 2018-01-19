@@ -8,7 +8,8 @@ public class Runner {
     public static void main(String[] args) {
 
         Diary diary = new Diary();
-        diary.addDay();
+        diary.addDate("1 Feb 2018");
+        diary.addDay(new Day(new Note(Lesson.ALGEBRA, "", Mark.FIVE)));
     }
 
 }

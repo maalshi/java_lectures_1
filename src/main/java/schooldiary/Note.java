@@ -5,22 +5,33 @@ import schooldiary.enums.Mark;
 
 public class Note {
 
+    private String hometask;
 
-    @Override
-    public String toString() {
-        return "Note{" +
-                "hometask='" + hometask + '\'' +
-                ", subject=" + subject +
-                ", mark=" + mark +
-                '}';
+    public Lesson getLesson() {
+        return lesson;
     }
 
-    private String hometask;
-    private Lesson subject;
+    public void setLesson(Lesson lesson) {
+        this.lesson = lesson;
+    }
+
+    private Lesson lesson;
+
+    public Mark getMark() {
+        return mark;
+    }
+
+    public void setMark(Mark mark) {
+        this.mark = mark;
+    }
+
     private Mark mark;
 
 
-    public Note(Lesson lesson, String hometask, Mark five) {
+    public Note(Lesson lesson, String hometask, Mark mark) {
+        this.lesson = lesson;
+        this.hometask = hometask;
+        this.mark = mark;
     }
 
     public String getHometask() {
@@ -29,6 +40,15 @@ public class Note {
 
     public void setHometask(String hometask) {
         hometask = hometask;
+    }
+
+    @Override
+    public String toString() {
+        return "Note{" +
+                "hometask='" + hometask + '\'' +
+                ", lesson=" + lesson +
+                ", mark=" + mark +
+                '}';
     }
 
 }
