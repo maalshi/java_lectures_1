@@ -1,16 +1,14 @@
 package schooldiary;
 
+import schooldiary.enums.Lesson;
+import schooldiary.enums.Mark;
+
 public class Runner {
 
     public static void main(String[] args) {
-        Note note = new Note();
-        Diary diary = new Diary();
-        Day day = new Day();
 
-        note.addDate();
-        note.addLesson();
-        note.addHometask();
-        note.addMark();
+        Diary diary = new Diary();
+        diary.addDay();
     }
 
 }

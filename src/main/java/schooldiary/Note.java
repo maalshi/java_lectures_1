@@ -1,26 +1,34 @@
 package schooldiary;
 
+import schooldiary.enums.Lesson;
+import schooldiary.enums.Mark;
+
 public class Note {
 
 
-
-    public void addLesson(){
-        System.out.print(Lessons.ALGEBRA);
-
+    @Override
+    public String toString() {
+        return "Note{" +
+                "hometask='" + hometask + '\'' +
+                ", subject=" + subject +
+                ", mark=" + mark +
+                '}';
     }
 
-    public void addDate(){
-        System.out.println("1 Feb 2018");
+    private String hometask;
+    private Lesson subject;
+    private Mark mark;
 
+
+    public Note(Lesson lesson, String hometask, Mark five) {
     }
 
-    public void addHometask(){
-        System.out.print(" page 34 task 4 ");
-
+    public String getHometask() {
+        return hometask;
     }
 
-    public void addMark(){
-        System.out.print(Marks.FIVE);
-
+    public void setHometask(String hometask) {
+        hometask = hometask;
     }
+
 }
