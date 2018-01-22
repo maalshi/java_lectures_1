@@ -3,11 +3,14 @@ package schooldiary;
 import schooldiary.enums.Lesson;
 import schooldiary.enums.Mark;
 
+import java.util.Date;
+
 public class Day {
 
+    private Date date;
     private Note notesarray [] = new Note[10];
 
-    public Day() {
+    public Day(Note note, Note note1, Note note2) {
 
     }
 
@@ -19,6 +22,5 @@ public class Day {
             return;
         }
     }
-
 
 }

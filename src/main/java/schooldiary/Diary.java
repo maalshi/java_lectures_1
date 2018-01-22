@@ -1,13 +1,15 @@
 package schooldiary;
 
+import java.util.Date;
+
 public class Diary {
 
 
     private Day daysarray [] = new Day [5];
 
-    public void addDay(Day day){
+    public void addDay(){
         for (int i =0; i<5; i++){
-            daysarray[i] = day;
+            daysarray[i] = daysarray[i];
             System.out.println(daysarray[i]);
             return;
         }
@@ -18,5 +20,9 @@ public class Diary {
 
     }
 
+    public void addNote(Date date, Note note){
+
+
+    }
 
 }
