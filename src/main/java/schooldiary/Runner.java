@@ -12,7 +12,7 @@ public class Runner {
         Note note;
 
         Diary diary = new Diary();
-        diary.addNote(new Date(10/02/2018), new Note(Lesson.MATHS, "", Mark.FOUR));
+        diary.addNote(new Date(10/04/2018), new Note(Lesson.MATHS, " page 1 task 4", Mark.FOUR));
     }
 
 }

@@ -8,6 +8,7 @@ public class Diary {
     private Day daysarray [] = new Day [5];
 
     public void addDay(){
+
         for (int i =0; i<5; i++){
             daysarray[i] = daysarray[i];
             System.out.println(daysarray[i]);
@@ -21,8 +22,7 @@ public class Diary {
     }
 
     public void addNote(Date date, Note note){
-
-
-    }
+        System.out.println(date + " " + note);
+      }
 
 }
