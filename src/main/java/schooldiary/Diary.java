@@ -22,7 +22,8 @@ public class Diary {
     }
 
     public void addNote(Date date, Note note){
-        System.out.println(date + " " + note);
+        System.out.println(date);
+        System.out.println(note);
       }
 
 }
