@@ -10,13 +10,9 @@ public class Diary {
     private int daysarray [] = new int[5];
 
     public void addDay() {
-        int i = 0;
-       while( i < 5) {
-            daysarray[0] = i;
-            i++;
+        for (int i=0; i<5;i++){
+            daysarray[i] = i;
         }
-
-        System.out.println("Day " + daysarray[i]);
     }
 
     public void addDate(String date){
