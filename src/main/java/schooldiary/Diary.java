@@ -9,7 +9,7 @@ public class Diary {
 
     private int daysarray [] = new int[5];
 
-    public void addDay() {
+    public void initDays() {
         for (int i=0; i<5;i++){
             daysarray[i] = i;
         }

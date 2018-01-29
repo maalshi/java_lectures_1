@@ -14,7 +14,7 @@ public class Runner {
 
         Diary diary = new Diary();
         diary.addNote(4, new Note(Lesson.ALGEBRA, "", Mark.FIVE));
-        diary.addDay();
+        diary.initDays();
     }
 
 }
