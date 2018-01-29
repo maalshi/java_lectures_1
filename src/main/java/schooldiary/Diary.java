@@ -30,7 +30,7 @@ public class Diary {
         System.out.println(calendar.getTime());
     }
 
-    public void addNote(int date, Note note){
+    public void addNote(Date date, Note note){
         System.out.println(calendar.getTime());
         System.out.println(note);
       }

@@ -15,7 +15,7 @@ public class Runner {
 
         Calendar calendar = Calendar.getInstance();
         Diary diary = new Diary();
-        diary.addNote(2, new Note(Lesson.ALGEBRA, "", Mark.FIVE));
+        diary.addNote(new Date(10,10,2018), new Note(Lesson.ALGEBRA, "", Mark.FIVE));
        // diary.initDays();
     }
 
