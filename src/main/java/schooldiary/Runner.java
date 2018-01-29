@@ -13,7 +13,7 @@ public class Runner {
         Date date;
 
         Diary diary = new Diary();
-        diary.addNote(2, new Note(Lesson.ALGEBRA, "", Mark.FIVE));
+        diary.addNote(4, new Note(Lesson.ALGEBRA, "", Mark.FIVE));
         diary.addDay();
     }
 

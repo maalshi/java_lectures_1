@@ -13,6 +13,7 @@ public class Diary {
         int i = 0;
        while( i < 5) {
             daysarray[0] = i;
+            i++;
         }
 
         System.out.println("Day " + daysarray[i]);
