@@ -1,19 +1,21 @@
 package schooldiary;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Diary {
 
 
-    private Day daysarray [] = new Day [5];
+    private int daysarray [] = new int[5];
 
-    public void addDay(){
-
-        for (int i =0; i<5; i++){
-            daysarray[i] = daysarray[i];
-            System.out.println(daysarray[i]);
-            return;
+    public void addDay() {
+        int i = 0;
+       while( i < 5) {
+            daysarray[0] = i;
         }
+
+        System.out.println("Day " + daysarray[i]);
     }
 
     public void addDate(String date){
@@ -21,7 +23,7 @@ public class Diary {
 
     }
 
-    public void addNote(Date date, Note note){
+    public void addNote(int date, Note note){
         System.out.println(date);
         System.out.println(note);
       }

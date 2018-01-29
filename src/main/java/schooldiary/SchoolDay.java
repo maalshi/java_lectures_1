@@ -5,7 +5,7 @@ import schooldiary.enums.Mark;
 
 import java.util.Date;
 
-public class Day {
+public class SchoolDay {
 
     private Date date;
     private Note notesarray [] = new Note[10];
