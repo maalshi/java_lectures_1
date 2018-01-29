@@ -10,28 +10,31 @@ public class Diary {
 
     private Date daysarray [] = new Date[5];
 
-    Calendar calendar = Calendar.getInstance();
+
 
     public void initDays()  {
 
-
+        Calendar calendar = Calendar.getInstance();
         SimpleDateFormat sdf = new SimpleDateFormat("dd.mm.yyyy");
-        calendar.set(2018, 10, 10);
-        Date date = calendar.getTime();
+        calendar.set(2018, 10, 12);
+
 
         for (int i = 0; i < 5; i++) {
+            Date date = calendar.getTime();
             daysarray[i] = date;
             calendar.add(Calendar.DAY_OF_MONTH, 1);
+            System.out.println(daysarray[i]);
         }
+
 
     }
 
     public void addDate(String date){
-        System.out.println(calendar.getTime());
+        System.out.println(date);
     }
 
     public void addNote(Date date, Note note){
-        System.out.println(calendar.getTime());
+        System.out.println(date);
         System.out.println(note);
       }
 
