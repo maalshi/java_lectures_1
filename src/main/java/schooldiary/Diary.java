@@ -8,7 +8,7 @@ import java.util.Date;
 public class Diary {
 
 
-    private Date daysarray [] = new Date[5];
+    private SchoolDay schooldays [] = new SchoolDay[5];
 
 
 
@@ -21,11 +21,10 @@ public class Diary {
 
         for (int i = 0; i < 5; i++) {
             Date date = calendar.getTime();
-            daysarray[i] = date;
+            schooldays[i] = new SchoolDay(date);
             calendar.add(Calendar.DAY_OF_MONTH, 1);
-            System.out.println(daysarray[i]);
+            System.out.println(schooldays[i]);
         }
-
 
     }
 
@@ -33,9 +32,9 @@ public class Diary {
         System.out.println(date);
     }
 
-    public void addNote(Date date, Note note){
+    public void addNote(Date date, SchoolDay schoolday){
         System.out.println(date);
-        System.out.println(note);
+        System.out.println(schoolday);
       }
 
 }
