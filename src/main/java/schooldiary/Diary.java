@@ -2,14 +2,16 @@ package schooldiary;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Date;
 
 public class Diary {
 
 
-    private SchoolDay schooldays [] = new SchoolDay[5];
 
+
+    public SchoolDay schooldays [] = new SchoolDay[5];
 
 
     public void initDays()  {
@@ -24,6 +26,9 @@ public class Diary {
             schooldays[i] = new SchoolDay(date);
             calendar.add(Calendar.DAY_OF_MONTH, 1);
             System.out.println(schooldays[i]);
+
+
+
         }
 
     }
@@ -32,9 +37,10 @@ public class Diary {
         System.out.println(date);
     }
 
-    public void addNote(Date date, SchoolDay schoolday){
+    public void addNote(Date date, Note schoolday){
         System.out.println(date);
         System.out.println(schoolday);
       }
+
 
 }
