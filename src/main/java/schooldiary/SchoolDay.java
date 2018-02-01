@@ -3,6 +3,7 @@ package schooldiary;
 import schooldiary.enums.Lesson;
 import schooldiary.enums.Mark;
 
+import java.util.Arrays;
 import java.util.Date;
 
 public class SchoolDay {
@@ -24,4 +25,11 @@ public class SchoolDay {
         }
     }
 
+    @Override
+    public String toString() {
+        return "SchoolDay{" +
+                "date=" + date +
+                ", notesarray=" + Arrays.toString(notesarray) +
+                '}';
+    }
 }
